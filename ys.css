@@ -1,0 +1,54 @@
+@charset "utf-8";
+
+*{}
+a{text-decoration:none!important;}
+
+/* Top 顶部 */
+#kjbt{font-Weight:bold;color:white} /* 站名加粗 */
+.ystop #sylj A{padding:2px;color:#FFF;text-shadow:1px 1px 1px #000,-1px -1px 1px #000} /* 导航链接 */
+/* #sylj a:last-child{color:#00ff00!important;font-Weight:600;font-size:16px;position:absolute;right:20px;top:30px;} 备用地址提醒 */
+/* #sylj>img:nth-last-of-type(1){display:none!important;} 去掉备用地址图标 */
+/* .ystop{background-attachment:scroll;background-color:#000!important;background-position:center top;background-repeat:no-repeat;
+background-size:100% 100%;-webkit-background-size:100% 100%;height:190px;background-image:url(top.jpg)} 顶部背景 */
+
+/* Comments 留言 */
+#idczq{padding-top: 24px!important;} /* 上填充-3 与右侧对其 */
+#ysmenu>div:first-child{margin-left:0!important} /* 取消首标签左间距 */
+#ysmenu div{color:#fff;padding:3px 0 1px;margin:0;background-color:#444;width:25%;height: 25px;text-align:center;} /* 标签 */
+#ysmenu div:hover{color:#6da300} /* 经过标签字体变色 */
+#ysmenu div:last-child label{color:inherit!important} /* 管理区登陆颜色 */
+#ysmenu .dqcd{border-bottom:1px solid #CCE2F4;color:#000;background-color:#CCE2F4;} /* 选中标签 */
+
+@keyframes change{0%{color:#FF0000}25%{color:#FF00FF}50%{color:#00FF00}75%{color:#00FFFF}100%{color:#FF0000}} /* 置顶留言变色动画 */
+#lynr div:first-child .lynr div{color:inherit;animation:change 2s linear 0s infinite} /* 引用动画 */
+#lynr div:first-child div label{display:none} /* 去掉首个留言的时间 */
+#lynr div:first-child>div:last-child:before{content:'刚刚 1分钟前';color:#999!important} /* 留言时间替换 */
+
+/* Documents 文件 */
+.ta_wjq{background-color: #444!important;line-height:22px;min-height:24px;} /* 目录top标题 */
+.gml>img:first-child{display:none} /* 去除上传下载标识 */
+.bjtb{margin:1px 0 3px 3px} /* 文档图标位置调整 */
+.gml{border:none !important;} /* 去掉目录分割线 */
+.gml *{vertical-align:middle} /* 标题垂直居中 */
+a.ml:hover,a.new:hover,a:hover,.xlj a:hover{color:red} /* 鼠标悬浮红色 */
+
+/* Components 组件 */
+@media (max-width:993px){#weiboshow{display:none;}} /* 微博秀手机不显示 */
+*::-webkit-scrollbar{width:8px;height:5px;background-color:#999} /* 轨道 */
+*::-webkit-scrollbar-thumb{border-radius:5px;background-color:#444} /* 滑块 */
+.lynrc::-webkit-scrollbar{width:5px;height:5px} /* 留言窄宽度 */
+
+/* Theme 主题 */
+.BT2,#glyq2 input,#buyh input,#idwj1 button{color: #eee!important;background-color: #444;border-radius: 3px;border: 2px solid #444;} /* 按钮 */
+.BT2:hover,#glyq2 input:hover,#buyh input:hover,#idwj1 button:hover{background-color:#111;border-color:#111;}/* 按钮经过 */
+/*
+body{background-color:#000!important;background-image:url(bg.jpg);background-repeat:repeat}
+#ysmenu1,#ysmenu1 a,.lynrc{background-color:#111!important;color:#bfbfbf}
+.tx3{background-color:#e5e8ea!important;color:#000!important;border-radius:5px;overflow:hidden;border:1px solid #333!important;padding:1px}
+#nr{background-image:url(ly.gif);background-repeat:no-repeat;background-position:center center}
+.lynrc{border:1px solid #2e2e2e;background-color:#111!important}
+.lysm{color:#77a7ff!important}
+.lynr{color:#fefffd!important;padding-left:2px;padding-right:2px}
+.lyk label{color:#999}
+.lyhf{color:#b6ff00!important}
+*/
